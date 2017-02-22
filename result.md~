@@ -3,7 +3,7 @@ countwords.py使用python3开发，在命令行运行如下命令即可：
 > python3 countwords.py
 
 count_biwords.py使用python2开发，在命令行运行如下命令即可：
-> python count_biwords.py ./happiness_seg.txt
+> python count_biwords.py
 
 ## 运行结果
 > [(('的', '人'), 923), (('他', '的'), 503), (('自己', '的'), 479), (('上', '的'), 355), (('他们', '的'), 335), (('人', '的'), 293), (('的', '时候'), 261), (('就', '会'), 225), (('的', '东西'), 207), (('都', '是'), 206)]

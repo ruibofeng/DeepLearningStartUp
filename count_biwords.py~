@@ -4,6 +4,7 @@
 import jieba
 import re
 from collections import Counter
+import sys
 
 # 传入一个interable类型的词组集合，输出一个由二元词组构成的list
 def bigrams(words):
@@ -29,9 +30,11 @@ def count_words(text):
     return Counter(biwords)
 
 if __name__ == "__main__":
-    with open('./happiness_seg.txt', 'r') as f:
+    filepath = sys.argv[1]
+    with open(filepath, 'r') as f:
         text = f.read().decode('utf-8')
     #print text[:100]
     biwords_count = count_words(text)
+    print "文中出现最多的二元词组为：".decode('utf-8')
     for words, count in biwords_count.most_common(10):
         print '(',words[0],words[1],')',count
