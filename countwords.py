@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# python3.6
 import jieba
 import re
 from collections import defaultdict
